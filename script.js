@@ -39,8 +39,41 @@
 
 // console.log("3" === 3);
 
-let isChecked = true,
-    isClosed = false;
+// let isChecked = true,
+//     isClosed = false;
 
-console.log(isChecked || isClosed);
+// console.log(isChecked || isClosed);
+
+
+// if (num < 49) {
+//     console.log("Меньше 50-и!");
+// } else if (num > 50) {
+//     console.log("Больше 50-и!");
+// } else {
+//     console.log("Равно 50-и!");
+// }
+
+// (num == 50) ? console.log("Равно 50-и!") : console.log("Не равно 50-и!");
+
+
+let num = 30;
+switch (num) {
+    case num < 50:
+        console.log("Меньше 50-и!");
+        break;
+    case num > 50:
+        console.log("Больше 50-и!");
+        break;
+    case 50:
+        console.log("Равно 50-и!");
+        break;
+    default:
+        console.log("Что-то пошло не так!");
+        break;
+}
+
+
+
+
+
 
