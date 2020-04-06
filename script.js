@@ -56,24 +56,38 @@
 // (num == 50) ? console.log("Равно 50-и!") : console.log("Не равно 50-и!");
 
 
-let num = 30;
-switch (num) {
-    case num < 50:
-        console.log("Меньше 50-и!");
-        break;
-    case num > 50:
-        console.log("Больше 50-и!");
-        break;
-    case 50:
-        console.log("Равно 50-и!");
-        break;
-    default:
-        console.log("Что-то пошло не так!");
-        break;
+
+// switch (num) {
+//     case num < 50:
+//         console.log("Меньше 50-и!");
+//         break;
+//     case num > 50:
+//         console.log("Больше 50-и!");
+//         break;
+//     case 50:
+//         console.log("Равно 50-и!");
+//         break;
+//     default:
+//         console.log("Что-то пошло не так!");
+//         break;
+// Первый вид цикла через while
+let num = 50;
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+// Второй тип цикла через do с последующей проверкой условия с помощью while
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+for (i = 1; i < 8; i++) {
+    if (i == 6) {
+        continue;
+    }
+    console.log(i);
 }
-
-
-
-
 
 
