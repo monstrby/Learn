@@ -83,11 +83,11 @@ let num = 50;
 // }
 // while (num < 55);
 
-for (i = 1; i < 8; i++) {
-    if (i == 6) {
-        continue;
-    }
-    console.log(i);
-}
+// for (i = 1; i < 8; i++) {
+//     if (i == 6) {
+//         continue;
+//     }
+//     console.log(i);
+// }
 
 
