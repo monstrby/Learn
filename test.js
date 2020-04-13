@@ -81,12 +81,11 @@ checkSavings();
 
 function chooseOptExpenses () {
     for ( let i = 0; i < 3; i++ ) {
-        let c = prompt("Статья необязательных расходов?");
+        let questionOptExpenses = prompt("Статья необязательных расходов?");
 
-        if ( (typeof(c)) === "string" && (typeof(c)) != null && c != "" && c.length <50) {
-             appData.optionalExpenses[1] = c;
-             appData.optionalExpenses[2] = c;
-             appData.optionalExpenses[3] = c;
+        if ( (typeof(questionOptExpenses)) === "string" && (typeof(questionOptExpenses)) != null 
+        && questionOptExpenses != "" && questionOptExpenses.length <50) {
+             appData.optionalExpenses[i] = questionOptExpenses;
             
         } else {
             console.log("Какая то хуйня");
@@ -94,5 +93,7 @@ function chooseOptExpenses () {
 
     }
 }
+
+
 
 chooseOptExpenses();

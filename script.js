@@ -171,34 +171,82 @@ let num = 50;
 // }
 
 
-function retVar () {
-    let alpha = 5;
-    return alpha;
+// function retVar () {
+//     let alpha = 5;
+//     return alpha;
+// }
+
+// let beta = retVar();
+// console.log(beta);
+
+// //Function expression выполняется только после кода функции
+
+// let summ = function (a,b) {
+//     return(a+b);
+// };
+
+// console.log(summ(3,7));
+
+// //ES6 standart стрелочная функция
+// let summES6 = (a,b) => a+b;
+// console.log(summES6(1,2));
+
+// let str = "anakonda";
+// console.log(str.length);
+// console.log(str.toUpperCase()); //метод переводит к верхнему регистру строку
+// console.log(str.toLowerCase()); //метод переводит к нижнему регистру
+
+// let twelwe = "12.2px";
+// //console.log(Math.round(twelwe));
+// console.log(parseInt(twelwe)); // метод округляет и переводит в целое число
+// console.log(parseFloat(twelwe)); // метод переводит в десятичное число
+
+function first () {
+    setTimeout( function (){
+        console.log(1);
+    }, 500);
 }
+ function second (){
+     console.log(2);
+ }
 
-let beta = retVar();
-console.log(beta);
+ first();
+ second();
 
-//Function expression выполняется только после кода функции
+ // Callback function (в качестве параметра callback мы передаем функцию)
 
-let summ = function (a,b) {
-    return(a+b);
-};
+//  function learnJS (lang, callback) {
+//      console.log("Я учу " + lang);
+//      callback();
+//  }
 
-console.log(summ(3,7));
+//  learnJS("JavaScript", function () {
+//      console.log("Данные взяты с коллбэк функции");
+//  });
 
-//ES6 standart стрелочная функция
-let summES6 = (a,b) => a+b;
-console.log(summES6(1,2));
+ // Создаем объект
 
-let str = "anakonda";
-console.log(str.length);
-console.log(str.toUpperCase()); //метод переводит к верхнему регистру строку
-console.log(str.toLowerCase()); //метод переводит к нижнему регистру
+ let options = {
+    width: 1024,
+    height:1024,
+    name: "test"
 
-let twelwe = "12.2px";
-//console.log(Math.round(twelwe));
-console.log(parseInt(twelwe)); // метод округляет и переводит в целое число
-console.log(parseFloat(twelwe)); // метод переводит в десятичное число
+ };
 
+ console.log(options.name);
+ options.bool = false;
+ options.colors = {
+    borders: "black",
+    bg: "red"
+ };
 
+ delete options.bool;
+ 
+ console.log(options);
+
+ 
+
+ for (let key in options) {
+     console.log("Свойство " + key + " имеeт значение " + options[key]);
+ }
+ console.log(Object.keys(options).length);
