@@ -271,16 +271,16 @@
 // arr.unshift("1"); //добавляет элемент массива (в начале)
 // console.log(arr);
 
-// let mess = [1,3,4,6,7];
+let mess = [1,3,4,6,7];
 
-// // цикл for of выдает значния массива
-// for (let key of mess) {
-//     console.log(key);
-// }
-// //цикл for in выдает ключи массива
-// for (let key in mess) {
-//     console.log(key);
-// }
+// цикл for of выдает значния массива
+for (let key of mess) {
+    console.log(key);
+}
+//цикл for in выдает ключи массива
+for (let key in mess) {
+    console.log(key);
+}
 
 // //получение данных от пользователя через prompt (через запятую) и запись в массив
 // let ans = prompt("","");
@@ -305,3 +305,16 @@ function compareNum(a,b) {
 
 console.log(i);
 
+let soldier = {
+    health: 500,
+    armor: 100
+};
+
+let ivan = {
+    health: 100
+};
+
+ivan.__proto__ = soldier;
+
+console.log(ivan);
+console.log(ivan.armor);
